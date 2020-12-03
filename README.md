@@ -27,6 +27,11 @@
 
 `git checkout main` 
 
+`git merge`
+
+`git log` 如下所示
+
+
 
 
 如果强制禁用Fast forward模式，git会在merge的时候生成一个新的commit信息，这样就可以在历史记录找到合并分支的信息
@@ -52,25 +57,25 @@
     Merge: e33c054 9fb785d
     Author: Skylar <shuanghuili@oppo.com>
     Date:   Thu Dec 3 16:36:50 2020 +0800
-
+    
     merge with no-ff
-
+    
     commit 9fb785d8285d2cc92af6b604af5e30b0fbbb3771 (origin/dev, dev)
     Author: Skylar <shuanghuili@oppo.com>
     Date:   Thu Dec 3 16:35:23 2020 +0800
-
+    
     :...skipping...
     commit f92520548411f18277dd937a91503b620268a91d (HEAD -> main)
     Merge: e33c054 9fb785d
     Author: Skylar <shuanghuili@oppo.com>
     Date:   Thu Dec 3 16:36:50 2020 +0800
-
+    
     merge with no-ff
-
+    
     commit 9fb785d8285d2cc92af6b604af5e30b0fbbb3771 (origin/dev, dev)
     Author: Skylar <shuanghuili@oppo.com>
     Date:   Thu Dec 3 16:35:23 2020 +0800
-
+    
     修改git学习笔记
 
 由打印出来的log发现，其每一步都被保存了
