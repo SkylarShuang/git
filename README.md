@@ -8,17 +8,32 @@
 
 通常合并（merge）分支时，会采用Fast forward模式，如下图。在这种模式下，删除分支后，会丢掉合并该分支的信息（类似于无痕？？）。
 
+
 <u>合并前</u>
-![Screenshot 2020-12-03 at 3.23.06 PM](/Users/80303015/Library/Application Support/typora-user-images/Screenshot 2020-12-03 at 3.23.06 PM.png)
+![1](assets/1.png)
 
 <u>*合并后*</u>
-![Screenshot 2020-12-03 at 3.23.06 PM-6981894](/Users/80303015/Library/Application Support/typora-user-images/Screenshot 2020-12-03 at 3.23.06 PM-6981894.png)
+![](assets/2.png)
+
+测试步骤：先新建dev分支，并修改reademe文件，然后提交commit，然后切换到master分支，进行merge
+
+`git checkout -b dev` 
+
+`git add .`
+
+`git commit -m 修改git学习笔记`
+
+`git push` 
+
+`git checkout main` 
+
+
 
 如果强制禁用Fast forward模式，git会在merge的时候生成一个新的commit信息，这样就可以在历史记录找到合并分支的信息
 
-测试步骤：先新建dev分支，并修改reademe文件，然后提交commit，然后切换到master分支，进行merge，进行强制禁用Fast forword命令
+测试步骤：切换到dev分支，并修改reademe文件，然后提交commit，然后切换到master分支，进行merge，进行强制禁用Fast forword命令
 
-`git checkout -b dev` 
+`git checkout dev` 
 
 `git add .`
 
@@ -57,6 +72,8 @@
     Date:   Thu Dec 3 16:35:23 2020 +0800
 
     修改git学习笔记
+
+由打印出来的log发现，其每一步都被保存了
 
 
 
