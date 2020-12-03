@@ -31,7 +31,35 @@
 
 `git log` 如下所示
 
+```js
 
+commit 10d3f57579dc6b1fc61ca9a68d6ae95b06faa738 (HEAD -> main)
+Merge: c709589 475b2c7
+Author: Skylar <shuanghuili@oppo.com>
+Date:   Thu Dec 3 17:25:26 2020 +0800
+
+    测试merge -ff命令Merge branch 'dev' into main
+
+commit 475b2c79af219a7293653d39703694aae588fcde (origin/dev, dev)
+Author: Skylar <shuanghuili@oppo.com>
+Date:   Thu Dec 3 17:24:42 2020 +0800
+
+
+```
+
+```js
+
+commit 249d7720c19ead3adf01d89fbcaaea20eeb321fe (origin/main, origin/HEAD)
+PM80303015:git- 80303015$ 
+PM80303015:git- 80303015$ git log --graph --decorate --oneline --simplify-by-decoration --all
+*   10d3f57 (HEAD -> main) 测试merge -ff命令Merge branch 'dev' into main
+|\  
+| * 475b2c7 (origin/dev, dev) dev分支提交测试-ff命令代码
+* | 249d772 (origin/main, origin/HEAD) 修改git笔记
+|/  
+* 0ef54cd Initial commit
+
+```
 
 
 如果强制禁用Fast forward模式，git会在merge的时候生成一个新的commit信息，这样就可以在历史记录找到合并分支的信息
@@ -64,21 +92,12 @@
     Author: Skylar <shuanghuili@oppo.com>
     Date:   Thu Dec 3 16:35:23 2020 +0800
     
-    :...skipping...
-    commit f92520548411f18277dd937a91503b620268a91d (HEAD -> main)
-    Merge: e33c054 9fb785d
-    Author: Skylar <shuanghuili@oppo.com>
-    Date:   Thu Dec 3 16:36:50 2020 +0800
-    
-    merge with no-ff
-    
-    commit 9fb785d8285d2cc92af6b604af5e30b0fbbb3771 (origin/dev, dev)
-    Author: Skylar <shuanghuili@oppo.com>
-    Date:   Thu Dec 3 16:35:23 2020 +0800
-    
     修改git学习笔记
 
-由打印出来的log发现，其每一步都被保存了
 
+```js
+
+
+```
 
 
