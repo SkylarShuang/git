@@ -27,7 +27,7 @@
 
 `git checkout main` 
 
-`git merge`
+`git merge -ff`
 
 `git log` 如下所示
 
