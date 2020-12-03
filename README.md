@@ -30,7 +30,7 @@
 
 `git merge -ff`
 
-`ggit log --graph --pretty=oneline --abbrev-commit` 如下所示
+`git log --graph --pretty=oneline --abbrev-commit` 如下所示
 
 ```js
 
