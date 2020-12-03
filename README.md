@@ -1,7 +1,6 @@
 # git 学习笔记
-**git log** 查看提交历史
 
-::HEAD::表示当前版本，::HEAD^::表示上一个版本，::HEAD^^::表示上上版本，::HEAD～100::表示上一百个版本
+<mark>HAED</mark>表示当前版本，<mark>HAED^</mark> 表示上一个版本，<mark>HAED^^</mark>表示上上版本，<mark>HAED~100</mark>表示上一百个版本
 
 **git reflog**  查看命令历史
 
@@ -9,19 +8,11 @@
 
 通常合并（merge）分支时，会采用Fast forward模式，如下图。在这种模式下，删除分支后，会丢掉合并该分支的信息（类似于无痕？？）。
 
-_合并前_
-![](&&&SFLOCALFILEPATH&&&Screenshot%202020-12-03%20at%203.22.06%20PM.png)
+<u>合并前</u>
+![Screenshot 2020-12-03 at 3.23.06 PM](/Users/80303015/Library/Application Support/typora-user-images/Screenshot 2020-12-03 at 3.23.06 PM.png)
 
-_合并后_
-![](&&&SFLOCALFILEPATH&&&Screenshot%202020-12-03%20at%203.23.06%20PM.png)
+<u>*合并后*</u>
+![Screenshot 2020-12-03 at 3.23.06 PM-6981894](/Users/80303015/Library/Application Support/typora-user-images/Screenshot 2020-12-03 at 3.23.06 PM-6981894.png)
 
 如果强制禁用Fast forward模式，git会在merge的时候生成一个新的commit信息，这样就可以在历史记录找到合并分支的信息
-
-
-
-冲突的时候的三种状态（待日后补充）
-::<<<<<<<::：
-::=======::：
-::>>>>>>>::：
-标记出不同分支的内容，我们修改如下后保存：
 
