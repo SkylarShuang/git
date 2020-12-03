@@ -28,9 +28,35 @@
 
 `git checkout main` 
 
-`git merge --no--ff -m "测试--no--ff命令" dev`
+`git merge --no-ff -m "merge with no-ff" dev`
 
 然后看`git log`
+
+
+    commit f92520548411f18277dd937a91503b620268a91dq(HEAD -> main)
+    Merge: e33c054 9fb785d
+    Author: Skylar <shuanghuili@oppo.com>
+    Date:   Thu Dec 3 16:36:50 2020 +0800
+
+    merge with no-ff
+
+    commit 9fb785d8285d2cc92af6b604af5e30b0fbbb3771 (origin/dev, dev)
+    Author: Skylar <shuanghuili@oppo.com>
+    Date:   Thu Dec 3 16:35:23 2020 +0800
+
+    :...skipping...
+    commit f92520548411f18277dd937a91503b620268a91d (HEAD -> main)
+    Merge: e33c054 9fb785d
+    Author: Skylar <shuanghuili@oppo.com>
+    Date:   Thu Dec 3 16:36:50 2020 +0800
+
+    merge with no-ff
+
+    commit 9fb785d8285d2cc92af6b604af5e30b0fbbb3771 (origin/dev, dev)
+    Author: Skylar <shuanghuili@oppo.com>
+    Date:   Thu Dec 3 16:35:23 2020 +0800
+
+    修改git学习笔记
 
 
 
