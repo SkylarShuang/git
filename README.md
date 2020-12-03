@@ -1,6 +1,6 @@
 # git 学习笔记
 
-<mark>HAED</mark>表示当前版本，<mark>HAED^</mark> 表示上一个版本，<mark>HAED^^</mark>表示上上版本，<mark>HAED~100</mark>表示上一百个版本
+`HAED`表示当前版本，`HEAD^` 表示上一个版本，`HEAD^^`表示上上版本，`HEAD～100`表示上一百个版本
 
 **git reflog**  查看命令历史
 
@@ -15,4 +15,22 @@
 ![Screenshot 2020-12-03 at 3.23.06 PM-6981894](/Users/80303015/Library/Application Support/typora-user-images/Screenshot 2020-12-03 at 3.23.06 PM-6981894.png)
 
 如果强制禁用Fast forward模式，git会在merge的时候生成一个新的commit信息，这样就可以在历史记录找到合并分支的信息
+
+测试步骤：先新建dev分支，并修改reademe文件，然后提交commit，然后切换到master分支，进行merge，进行强制禁用Fast forword命令
+
+`git checkout -b dev` 
+
+`git add .`
+
+`git commit -m 修改git学习笔记`
+
+`git push` 
+
+`git checkout main` 
+
+`git merge --no--ff -m "测试--no--ff命令" dev`
+
+然后看`git log`
+
+
 
