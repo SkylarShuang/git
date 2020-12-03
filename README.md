@@ -9,10 +9,10 @@
 通常合并（merge）分支时，会采用Fast forward模式，如下图。在这种模式下，删除分支后，会丢掉合并该分支的信息。
 
 
-<u>合并前</u>
+**合并前**
 ![1](assets/1.png)
 
-<u>*合并后*</u>
+**合并后**
 ![](assets/2.png)
 
 
@@ -44,11 +44,11 @@ Date:   Thu Dec 3 17:25:26 2020 +0800
 commit 475b2c79af219a7293653d39703694aae588fcde (origin/dev, dev)
 Author: Skylar <shuanghuili@oppo.com>
 Date:   Thu Dec 3 17:24:42 2020 +0800
-
+    dev分支提交测试-ff命令代码
 
 ```
 
-由下图可以看到当分支采用merge --ff的方式合并以后，就会合并到一个分支上，此时在dev上rebase就不会出现commit，但如果dev分支没有和采用fast-forward方式合并到一个分支，git merge就会出现commit，详见<https://git-scm.com/docs/git-merge>
+由下图可以看到当分支采用merge --ff的方式合并以后，就会合并到一个分支上，此时在dev进行git merge就不会出现commit，但如果dev分支没有和采用fast-forward方式合并到一个分支，git merge就会出现commit，详见<https://git-scm.com/docs/git-merge>
 
 ```js
 
